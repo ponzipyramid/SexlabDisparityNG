@@ -94,8 +94,8 @@ namespace {
         return ArrayOp(lhs, rhs, MaxOperation); 
     }
 
-    std::vector<float> MinScalar(StaticFunctionTag*, std::vector<float> lhs, std::vector<float> rhs) {
-        return ArrayOp(lhs, rhs, MinOperation);
+    std::vector<float> MinScalar(StaticFunctionTag*, std::vector<float> lhs, float rhs) {
+        return ArrayScalarOp(lhs, rhs, MinOperation);
     }
 
     std::vector<float> MaxScalar(StaticFunctionTag*, std::vector<float> lhs, float scalar) {
