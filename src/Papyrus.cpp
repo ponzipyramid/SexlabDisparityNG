@@ -84,7 +84,7 @@ namespace {
     }
 
     float MinOperation(float lhs, float rhs) { return std::min(lhs, rhs); }
-    float MaxOperation(float lhs, float rhs) { return std::min(lhs, rhs); }
+    float MaxOperation(float lhs, float rhs) { return std::max(lhs, rhs); }
     
     std::vector<float> Min(StaticFunctionTag*, std::vector<float> lhs, std::vector<float> rhs) { 
         return ArrayOp(lhs, rhs, MinOperation);
